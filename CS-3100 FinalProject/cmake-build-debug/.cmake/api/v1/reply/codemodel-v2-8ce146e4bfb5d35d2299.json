@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.24.2"
+						"string" : "3.26"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CS_3100_FinalProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CS_3100_FinalProject-Debug-c050c51707d4a4c6930d.json",
+					"jsonFile" : "target-CS_3100_FinalProject-Debug-74d3f5adeef86d46fd3a.json",
 					"name" : "CS_3100_FinalProject",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/pbrau/Desktop/Fall_2024/CS-3100_FinalProject/CS-3100 FinalProject/cmake-build-debug",
-		"source" : "C:/Users/pbrau/Desktop/Fall_2024/CS-3100_FinalProject/CS-3100 FinalProject"
+		"build" : "C:/Users/carso/Downloads/Program project/CS-3100_FinalProject2/CS-3100 FinalProject/cmake-build-debug",
+		"source" : "C:/Users/carso/Downloads/Program project/CS-3100_FinalProject2/CS-3100 FinalProject"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 5
 	}
 }

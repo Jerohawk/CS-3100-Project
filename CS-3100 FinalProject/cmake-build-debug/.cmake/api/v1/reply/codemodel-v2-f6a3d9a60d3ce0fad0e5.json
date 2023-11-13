@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.26"
+						"string" : "3.24.2"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/aummc/CLionProjects/CS-3100 FinalProject/cmake-build-debug",
-		"source" : "C:/Users/aummc/CLionProjects/CS-3100 FinalProject"
+		"build" : "C:/Users/aummc/Documents/CS-3100 Final Project/CS-3100 FinalProject/cmake-build-debug",
+		"source" : "C:/Users/aummc/Documents/CS-3100 Final Project/CS-3100 FinalProject"
 	},
 	"version" : 
 	{

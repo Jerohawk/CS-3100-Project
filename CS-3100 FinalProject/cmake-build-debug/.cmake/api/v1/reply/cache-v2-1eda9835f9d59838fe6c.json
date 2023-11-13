@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/aummc/CLionProjects/CS-3100 FinalProject/cmake-build-debug"
+			"value" : "c:/Users/aummc/Documents/CS-3100 Final Project/CS-3100 FinalProject/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/aummc/CLionProjects/CS-3100 FinalProject/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/aummc/Documents/CS-3100 Final Project/CS-3100 FinalProject/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/aummc/CLionProjects/CS-3100 FinalProject"
+			"value" : "C:/Users/aummc/Documents/CS-3100 Final Project/CS-3100 FinalProject"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/aummc/CLionProjects/CS-3100 FinalProject/cmake-build-debug"
+			"value" : "C:/Users/aummc/Documents/CS-3100 Final Project/CS-3100 FinalProject/cmake-build-debug"
 		},
 		{
 			"name" : "CS_3100_FinalProject_IS_TOP_LEVEL",
@@ -1143,7 +1143,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/aummc/CLionProjects/CS-3100 FinalProject"
+			"value" : "C:/Users/aummc/Documents/CS-3100 Final Project/CS-3100 FinalProject"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

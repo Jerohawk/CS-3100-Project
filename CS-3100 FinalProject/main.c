@@ -40,25 +40,18 @@ int lex();
 #define SUB_OP 22
 #define MULT_OP 23
 #define DIV_OP 24
-#define LEFT_PAREN 25
-#define RIGHT_PAREN 26
-//Peters added code
-#define MOD_OP 22
-#define OR_OP 34
-#define LESS_OP 25
-#define LESSEQUAL_OP 26
-#define GREATER_OP 27
-#define GREATEREQUAL_OP 28
-#define EQUAL_OP 29
-#define NOTEQUAL_OP 30
-#define AND_OP 23
+#define LEFT_PAREN 40
+#define RIGHT_PAREN 41
+#define LEFT_BRACE 42
+#define RIGHT_BRACE 43
+#define SEMICOLON 44
+#define COMMA 45
 
 /******************************************************/
 /* main driver */
 int main()
 {
     /* Open the input data file and process its contents */
-    //add multiple txt files each with their own case, or have all in one file
     if ((in_fp = fopen("..\\front.txt", "r")) == NULL) {
         printf("ERROR - cannot open front.txt \n");
     } else {
@@ -66,7 +59,6 @@ int main()
         do {
             lex();
         } while (nextToken != EOF);
-        printf("Parsing complete!", "s");
     }
 
     return 0;
@@ -101,72 +93,27 @@ int lookup(char ch) {
             addChar();
             nextToken = DIV_OP;
             break;
-            //added code
-        case '&':
-            addChar();
-            getChar();
-            if(nextToken == '&'){
-                addChar();
-                nextToken = AND_OP;
-                break;
-            }else {
-                break;
-            }
-        case '|': //dosen't read value as ||, but as |. what makes this the case?
-            addChar();
-            getChar();
-            if(nextToken == '|'){
-                addChar();
-                nextToken = OR_OP;
-                break;
-            }else{
-                break;
-            }
-        case '<':
-            addChar();
-            getChar();
-            if(nextToken == '='){
-                addChar();
-                nextToken = LESSEQUAL_OP;
-                break;
-            }else{
-                nextToken = LESS_OP;
-                break;
-            }
-        case '>':
-            addChar();
-            getChar();
-            if(nextToken == '='){
-                addChar();
-                nextToken = GREATEREQUAL_OP;
-                break;
-            }else{
-                nextToken = GREATER_OP;
-                break;
-            }
         case '=':
             addChar();
-            getChar();
-            if(nextToken == '='){
-                nextToken = EQUAL_OP;
-                break;
-            }else{
-                nextToken = ASSIGN_OP;
-                break;
-            }
-        case '!':
-            addChar();
-            getChar();
-            if(nextToken == '='){
-                nextToken = NOTEQUAL_OP;
-                break;
-            }else {
-                break;
-            }
-        case '%':
-            addChar();
-            nextToken = MOD_OP;
+            nextToken = ASSIGN_OP;
             break;
+        case '{':
+            addChar();
+            nextToken = LEFT_BRACE;
+            break;
+        case '}':
+            addChar();
+            nextToken = RIGHT_BRACE;
+            break;
+        case ';':
+            addChar();
+            nextToken = SEMICOLON;
+            break;
+        case ',':
+            addChar();
+            nextToken = COMMA;
+            break;
+
         default:
             addChar();
             nextToken = EOF;
@@ -263,6 +210,7 @@ int lex() {
             lexeme[3] = 0;
             break;
     } /* End of switch */
+
     printf("Next token is: %d, Next lexeme is %s\n", nextToken, lexeme);
     return nextToken;
 } /* End of function lex */
