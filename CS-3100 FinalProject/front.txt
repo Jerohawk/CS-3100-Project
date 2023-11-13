@@ -1,1 +1,6 @@
-(sum+12sum-56)/total
+ident123&&var234||6!=var1
+(sum%47/total)
+//create string array, then compare identifiers with the array members(define global array, to see all key words)
+//library function string compare
+//use while/for loop to do comparison
+//output is good, task 2 done! BUT YOU NNEED TO EXPLAIN THE WHY
