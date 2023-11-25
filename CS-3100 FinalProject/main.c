@@ -35,30 +35,17 @@ int lex();
 /* Token codes */
 #define INT_LIT 10
 #define IDENT 11
-//#define ASSIGN_OP 20
-
-#define OP_MULTIPLY 20
-#define OP_DIVIDE 21
-#define OP_MOD 22
-#define OP_ADD 23
-#define OP_SUB 24
-#define OP_LESS 25
-#define OP_LESSEQUAL 26
-#define OP_GREATER 27
-#define OP_GREATEREQUAL 28
-#define OP_EQUAL 29
-#define OP_NOTEQUAL 30
-#define OP_NOT 31
-#define OP_ASSIGN 32
-#define OP_AND 33
-#define OP_OR 34
-
-//#define ADD_OP 21
-//#define SUB_OP 22
-//#define MULT_OP 23
-//#define DIV_OP 24
-#define LEFT_PAREN 25
-#define RIGHT_PAREN 26
+#define ASSIGN_OP 20
+#define ADD_OP 21
+#define SUB_OP 22
+#define MULT_OP 23
+#define DIV_OP 24
+#define LEFT_PAREN 40
+#define RIGHT_PAREN 41
+#define LEFT_BRACE 42
+#define RIGHT_BRACE 43
+#define SEMICOLON 44
+#define COMMA 45
 
 /******************************************************/
 /* main driver */
@@ -92,69 +79,39 @@ int lookup(char ch) {
             break;
         case '+':
             addChar();
-            nextToken = OP_ADD;
+            nextToken = ADD_OP;
             break;
         case '-':
             addChar();
-            nextToken = OP_SUB;
+            nextToken = SUB_OP;
             break;
         case '*':
             addChar();
-            nextToken = OP_MULTIPLY;
+            nextToken = MULT_OP;
             break;
         case '/':
             addChar();
-            nextToken = OP_DIVIDE;
+            nextToken = DIV_OP;
             break;
-
-        case '%':
-            addChar();
-            nextToken = OP_MOD;
-            break;
-
-        case '<':
-            addChar();
-            nextToken = OP_LESS;
-            break;
-
-        case '<=':
-            addChar();
-            nextToken = OP_LESSEQUAL;
-            break;
-
-        case '>':
-            addChar();
-            nextToken = OP_GREATER;
-            break;
-
-        case '==':
-            addChar();
-            nextToken = OP_EQUAL;
-            break;
-
-        case '!=':
-            addChar();
-            nextToken = OP_NOTEQUAL;
-            break;
-
-        case '!':
-            addChar();
-            nextToken = OP_NOT;
-            break;
-
         case '=':
             addChar();
-            nextToken = OP_ASSIGN;
+            nextToken = ASSIGN_OP;
             break;
-
-        case '&&':
+        case '{':
             addChar();
-            nextToken = OP_ADD;
+            nextToken = LEFT_BRACE;
             break;
-
-        case '||':
+        case '}':
             addChar();
-            nextToken = OP_OR;
+            nextToken = RIGHT_BRACE;
+            break;
+        case ';':
+            addChar();
+            nextToken = SEMICOLON;
+            break;
+        case ',':
+            addChar();
+            nextToken = COMMA;
             break;
 
         default:

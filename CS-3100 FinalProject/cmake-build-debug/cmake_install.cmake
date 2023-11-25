@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/aummc/CLionProjects/CS-3100 FinalProject
+# Install script for directory: C:/Users/carso/Downloads/Program project/CS-3100_FinalProject2/CS-3100 FinalProject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/aummc/CLionProjects/CS-3100 FinalProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/carso/Downloads/Program project/CS-3100_FinalProject2/CS-3100 FinalProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

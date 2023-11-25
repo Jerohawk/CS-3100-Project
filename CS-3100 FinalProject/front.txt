@@ -1,1 +1,2 @@
-(sum+12sum-56)/total
+(sum + 12,9=4+{*sum-56})/total;
+result = (a == b) = (c > b);
