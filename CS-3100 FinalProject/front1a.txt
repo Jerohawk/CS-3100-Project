@@ -1,0 +1,1 @@
+(sum + SUM1 -47)/Total

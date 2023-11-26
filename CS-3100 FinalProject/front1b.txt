@@ -1,0 +1,1 @@
+(sum+12sum-56)/total
