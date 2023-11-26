@@ -82,7 +82,7 @@ int main()
 {
     /* Open the input data file and process its contents */
     //add multiple txt files each with their own case, or have all in one file
-    if ((in_fp = fopen("..\\front.txt", "r")) == NULL) {
+    if ((in_fp = fopen("..\\front4.txt", "r")) == NULL) {
         printf("ERROR - cannot open front.txt \n");
     } else {
         getChar();
